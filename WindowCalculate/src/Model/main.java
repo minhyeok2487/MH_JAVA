@@ -12,6 +12,7 @@ public class main {
 		Menu menuEdit;
 		Menu menuHelp;
 		Frame frame = new Frame();
+		frame.setResizable(false);
 
 		frame.setTitle("계산기");
 		frame.setSize(WIDTH, HEIGHT);
@@ -100,7 +101,7 @@ public class main {
 		btnX.setBounds(375,385,80,80);
 		Button btnEqul = new Button("=");
 		btnEqul.setBounds(375,475,80,170);
-		//p2.setLayout(new BorderLayout());
+
 		p2.add(btnMC);
 		p2.add(btnMR);
 		p2.add(btnMS);

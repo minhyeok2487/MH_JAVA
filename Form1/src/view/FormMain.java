@@ -73,9 +73,6 @@ public class FormMain {
 		panel2.add(label5);
 		frame.add(panel2);
 		
-		
-		
-		
 		frame.setVisible(true);
 		frame.setLocationRelativeTo(null);
 		

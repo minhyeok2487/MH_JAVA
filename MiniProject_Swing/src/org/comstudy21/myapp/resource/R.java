@@ -24,6 +24,7 @@ public interface R {
 	String Grouptitle = "::: Group Management System :::";
 	int frameWidth=720, frameHeight=480;
 	
+	Vector<String> v = new Vector<String>();
 	String[] listStr = {"기본", "친구", "지인"};
 	// JTextField는 View와 Controller에서 모두 접근해야 한다.
 	JTextField txtNo = new JTextField(10);

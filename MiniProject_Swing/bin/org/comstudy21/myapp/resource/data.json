@@ -1,0 +1,26 @@
+{
+  "member": [
+    {
+      "no": 1,
+      "phone": "010-2222-1111",
+      "name": "Minhyeok",
+      "email": "qwe2487",
+      "group": "친구"
+    },
+    {
+      "no": 2,
+      "phone": "010-1111-2222",
+      "name": "Minji",
+      "email": "zxc0000",
+      "group": "기본"
+    },
+    {
+      "no": 3,
+      "phone": "010-5555-2222",
+      "name": "Haemin",
+      "email": "asd2222",
+      "group": "지인"
+    }
+  ],
+  "seq": 4
+}

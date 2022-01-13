@@ -1,5 +1,6 @@
 package org.comstudy21.myapp.model;
 
+import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileReader;
@@ -9,6 +10,7 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.ArrayList;
+import java.util.StringTokenizer;
 
 import javax.swing.JOptionPane;
 
@@ -34,7 +36,28 @@ public class Dao {
 			for (String str : R.listStr) {
 				bw.write(str + '\n');
 			}
-			System.out.println("Successfully wrote to the file.");
+			System.out.println("Successfully Group wrote to the file.");
+		} catch (IOException e) {
+			System.out.println("An error occurred.");
+			e.printStackTrace();
+		}
+	}
+	
+	public static void LoadGroupList() {
+		File file = new File(Gpathname);
+		try (BufferedReader br = new BufferedReader(new FileReader(file))) {
+			
+			String line;
+			ArrayList<String> arr = new ArrayList<String>();
+			int i = 0;
+		    while ((line = br.readLine()) != null) {
+		    	arr.add(line);
+		        i++;
+		    }
+			for(int j = 0; j<arr.size();j++) {
+				System.out.println(arr.get(j));
+			}
+			br.close();
 		} catch (IOException e) {
 			System.out.println("An error occurred.");
 			e.printStackTrace();

@@ -7,7 +7,6 @@ public class AppMain {
 
 	public static void main(String[] args) {
 		Dao.loadDataList();
-		
 		new MainFrame();
 	}
 }

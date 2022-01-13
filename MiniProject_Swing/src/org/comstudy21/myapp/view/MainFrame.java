@@ -6,11 +6,13 @@ import java.awt.Container;
 import javax.swing.JFrame;
 
 import org.comstudy21.myapp.evt.KeyEvtHandler;
+import org.comstudy21.myapp.model.Dao;
 import org.comstudy21.myapp.resource.R;
 
 public class MainFrame extends JFrame implements R {
 	Container c = null;
 	public MainFrame() {
+		Dao.LoadGroupList();
 		c = getContentPane();
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
 		setTitle(title);
